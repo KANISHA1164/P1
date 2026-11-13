@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Resources — Campusly</title>
+  <link rel="stylesheet" href="styles.css"><script src="demo.js" defer></script><script src="app.js" defer></script>
+</head>
+<body data-page="resources">
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>campusly<span class="brand-dot">.</span></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="resources.html">Explore resources</a><a class="nav-link" href="dashboard.html">Student dashboard</a><a class="button button-small button-dark nav-login" href="login.html">Log in <span>↗</span></a></nav></header>
+  <main class="page-main">
+    <section class="page-heading"><div><span class="eyebrow">THE CAMPUS IS YOURS</span><h1>Find your <span class="text-accent">space.</span></h1><p>From quiet study corners to big presentation rooms, discover what's available.</p></div><a class="button button-primary" href="booking.html">Book a resource <span>→</span></a></section>
+    <section class="resource-controls" aria-label="Search and filter resources"><form id="resource-search" class="search-control"><span aria-hidden="true">⌕</span><label class="sr-only" for="resource-query">Search resources</label><input id="resource-query" name="search" type="search" placeholder="Search resources, buildings, or locations"></form><label class="filter-control"><span class="sr-only">Filter by resource type</span><select id="resource-type"><option value="">All resource types</option><option>Classroom</option><option>Computer laboratory</option><option>Seminar hall</option><option>Library room</option><option>Sports facility</option><option>Projector</option><option>Auditorium</option></select></label><label class="filter-control"><span class="sr-only">Filter availability</span><select id="availability-filter"><option value="">Any availability</option><option value="available">Available</option><option value="unavailable">Unavailable</option></select></label></section>
+    <div class="results-meta"><span id="results-count">Loading resources…</span><button class="clear-filters" id="clear-filters" type="button">Clear filters</button></div>
+    <div class="resource-grid resources-page-grid" id="resource-list" aria-live="polite"><div class="loading-card"><span class="spinner"></span>Loading campus resources…</div></div>
+    <p class="inline-message" id="resource-message" role="status" hidden></p>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">C</span><span>campusly<span class="brand-dot">.</span></span></a><p>Your campus, within reach.</p><div class="footer-contact"><a href="mailto:campus-support@example.edu">Contact campus support ↗</a><span>© 2026 Campusly</span></div></footer>
+</body>
+</html>

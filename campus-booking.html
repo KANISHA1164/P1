@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve a Space — Karunya Campus Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo.js" defer></script>
+  <script src="karunya.js" defer></script>
+</head>
+<body data-karunya-page="booking">
+  <header class="site-header karunya-header">
+    <a class="brand" href="index.html"><span class="brand-mark">K</span><span>Karunya <span class="brand-dot">Campus</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="campus-booking.html">Book a space</a><a class="nav-link" href="karunya-dashboard.html">My bookings</a><a class="button button-small button-outline" data-theme-toggle href="#">Dark mode</a><a class="button button-small button-dark" data-user-link href="login.html">University login ↗</a></nav>
+  </header>
+  <main class="page-main campus-booking-main">
+    <a class="back-link" href="index.html">← Karunya Campus Booking</a>
+    <section class="page-heading"><div><span class="eyebrow">LIVE CAMPUS AVAILABILITY</span><h1>Find your <span class="text-accent">space.</span></h1><p>Choose a resource and time to see what's available right now.</p></div><div class="karunya-role-pill" data-role-pill>Sign in to book</div></section>
+    <section class="campus-search-panel" aria-label="Booking time">
+      <label class="form-field"><span>Space type</span><select id="campus-category"><option value="LIBRARY">Library seats</option><option value="COMPUTER_LAB">Computer labs</option><option value="SEMINAR_HALL">Seminar halls · Faculty</option></select></label>
+      <label class="form-field"><span>Date</span><input id="campus-date" type="date" required></label>
+      <label class="form-field"><span>Starts</span><input id="campus-start" type="time" value="10:00" required></label>
+      <label class="form-field"><span>Ends</span><input id="campus-end" type="time" value="11:00" required></label>
+      <button class="button button-primary" id="check-availability" type="button">Check spaces</button>
+    </section>
+    <p class="form-message" id="campus-message" role="status" aria-live="polite"></p>
+    <section class="campus-selection-layout">
+      <div class="campus-map-panel">
+        <div class="card-heading"><div><span class="eyebrow" data-map-eyebrow>SELECT A FLOOR</span><h2 data-map-title>Library</h2></div><span class="live-indicator"><i></i> Live</span></div>
+        <div class="floor-tabs" data-floor-tabs role="tablist" aria-label="Library floor"></div>
+        <div class="facility-chooser" data-facilities></div>
+        <div class="seat-map-scroll"><div class="seat-map" data-seat-map aria-live="polite"><div class="empty-state">Choose a date and time to load available spaces.</div></div></div>
+        <div class="seat-legend" aria-label="Availability legend"><span><i class="seat-available"></i> Available</span><span><i class="seat-booked"></i> Booked</span><span><i class="seat-selected"></i> Selected</span><span><i class="seat-blocked"></i> Blocked</span></div>
+        <p class="facility-details" data-facility-details></p>
+      </div>
+      <aside class="campus-book-panel">
+        <span class="eyebrow">RESERVATION SUMMARY</span><h2>Make it yours.</h2>
+        <div class="selection-summary" data-selection-summary><p>Select an available seat, system, or hall to continue.</p></div>
+        <label class="form-field"><span>Purpose</span><textarea id="campus-purpose" rows="3" maxlength="500" placeholder="Study, class, seminar, or event" required></textarea></label>
+        <label class="form-field" data-attendance-field hidden><span>Expected attendance</span><input id="campus-attendance" type="number" min="1" step="1" placeholder="Number of attendees"></label>
+        <label class="form-field" data-repeat-field hidden><span>Weekly repeats</span><select id="campus-repeat"><option value="1">One-time booking</option><option value="2">2 weeks</option><option value="4">4 weeks</option><option value="8">8 weeks</option><option value="12">12 weeks</option></select></label>
+        <button class="button button-primary button-full" id="confirm-campus-booking" type="button" disabled>Confirm booking <span>→</span></button>
+        <p class="form-hint">Demo bookings are checked against this browser’s saved schedule. One seat or system may be selected per reservation.</p>
+      </aside>
+    </section>
+    <dialog class="resource-dialog karunya-confirm-dialog" data-confirm-dialog><div data-confirm-content></div><button class="button button-primary button-full" data-close-confirm type="button">Done</button></dialog>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">K</span><span>Karunya Campus Booking</span></a><p>Availability refreshes every few seconds.</p><div class="footer-contact"><a href="mailto:campus-support@example.edu">Campus support ↗</a><span>Karunya University</span></div></footer>
+</body>
+</html>

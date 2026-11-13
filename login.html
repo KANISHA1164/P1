@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in — Karunya Campus Booking</title><link rel="stylesheet" href="styles.css"><script src="demo.js" defer></script><script src="app.js" defer></script>
+</head>
+<body data-page="login">
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">K</span><span>Karunya <span class="brand-dot">Campus</span></span></a><a class="back-link" href="index.html">← Back to home</a></header>
+  <main class="auth-layout"><section class="auth-panel"><div class="auth-topline"><span class="eyebrow">WELCOME BACK</span><span class="auth-lock">✳</span></div><h1>Your campus<br>is waiting.</h1><p class="auth-subtitle">Log in to manage your bookings and find your next space.</p>
+    <div class="role-switch" role="group" aria-label="Choose account type"><button class="role-option active" type="button" data-role="STUDENT" aria-pressed="true">Student</button><button class="role-option" type="button" data-role="FACULTY" aria-pressed="false">Faculty</button><button class="role-option" type="button" data-role="ADMIN" aria-pressed="false">Admin</button></div>
+    <form id="login-form" novalidate><input type="hidden" name="role" value="STUDENT"><label class="form-field"><span>University email</span><input name="email" type="email" autocomplete="username" placeholder="you@karunya.edu.in" required></label><label class="form-field"><span>Password</span><input name="password" type="password" autocomplete="current-password" placeholder="Enter any demo password" required minlength="1"></label><div class="form-options"><label class="remember-option"><input type="checkbox" name="remember" checked> Keep me logged in</label><button class="text-button" type="button" id="forgot-password">Forgot password?</button></div><button class="button button-primary button-full" type="submit">Log in <span>→</span></button><p class="form-message" id="login-message" role="status" aria-live="polite"></p></form>
+    <p class="auth-footnote">Demo sign-in: any non-empty password with an @karunya.edu.in email. Choose a role above.</p>
+  </section><aside class="auth-visual"><div class="auth-visual-photo"></div><div class="auth-visual-caption"><span class="eyebrow">YOUR CAMPUS, ALL IN ONE PLACE</span><p>Make space for<br><strong>what's next.</strong></p><span class="visual-decoration">C.</span></div></aside></main>
+</body>
+</html>

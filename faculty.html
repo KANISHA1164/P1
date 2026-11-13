@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faculty Schedule — Karunya Campus Booking</title><link rel="stylesheet" href="styles.css"><script src="demo.js" defer></script><script src="karunya.js" defer></script>
+</head>
+<body data-karunya-page="faculty">
+  <header class="site-header karunya-header"><a class="brand" href="index.html"><span class="brand-mark">K</span><span>Karunya <span class="brand-dot">Campus</span></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="campus-booking.html">Book a space</a><a class="nav-link active" href="faculty.html">Faculty schedule</a><a class="nav-link" href="karunya-dashboard.html">My bookings</a><a class="button button-small button-outline" data-theme-toggle href="#">Dark mode</a><a class="button button-small button-outline logout-button" href="login.html">Log out</a></nav></header>
+  <main class="dashboard-main">
+    <section class="dashboard-welcome"><div><span class="eyebrow">FACULTY PLANNING</span><h1>Welcome, <span class="text-accent" data-user-name>faculty.</span></h1><p>Reserve a hall or computer lab for your classes, seminars, and events.</p><p class="karunya-profile" data-profile></p></div><a class="button button-primary" href="campus-booking.html?category=SEMINAR_HALL">＋ Plan a booking</a></section>
+    <section class="karunya-faculty-actions"><a class="karunya-category-card" href="campus-booking.html?category=SEMINAR_HALL"><span class="category-icon">▤</span><h3>Reserve a seminar hall</h3><p>Check room schedules, capacity, projector, AC, and microphone details.</p></a><a class="karunya-category-card" href="campus-booking.html?category=COMPUTER_LAB"><span class="category-icon">⌘</span><h3>Reserve a computer lab</h3><p>Book one system or reserve the full lab for a class.</p></a></section>
+    <section class="dashboard-card"><div class="card-heading"><div><span class="eyebrow">FACILITY CALENDAR</span><h2>Room schedule</h2></div><label class="filter-control"><span class="sr-only">Choose a facility</span><select data-schedule-facility aria-label="Choose a facility"></select></label></div><div class="faculty-calendar-controls"><button class="button button-outline button-small" type="button" data-week-prev>← Previous week</button><span data-week-label></span><button class="button button-outline button-small" type="button" data-week-next>Next week →</button></div><div class="faculty-calendar-scroll"><div class="faculty-calendar" data-facility-calendar><div class="loading-card"><span class="spinner"></span>Loading room schedule…</div></div></div></section>
+    <section class="dashboard-card"><div class="card-heading"><div><span class="eyebrow">YOUR BOOKINGS</span><h2>Upcoming</h2></div></div><div class="karunya-booking-list" data-bookings><div class="loading-card"><span class="spinner"></span>Loading your schedule…</div></div><p class="form-message" data-error role="status"></p></section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">K</span><span>Karunya Campus Booking</span></a><p>Plan your next class.</p><div class="footer-contact"><a href="mailto:campus-support@example.edu">Campus support ↗</a><span>Karunya University</span></div></footer>
+</body>
+</html>

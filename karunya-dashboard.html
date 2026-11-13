@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Bookings — Karunya Campus Booking</title><link rel="stylesheet" href="styles.css"><script src="demo.js" defer></script><script src="karunya.js" defer></script>
+</head>
+<body data-karunya-page="dashboard">
+  <header class="site-header karunya-header"><a class="brand" href="index.html"><span class="brand-mark">K</span><span>Karunya <span class="brand-dot">Campus</span></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="campus-booking.html">Book a space</a><a class="nav-link active" href="karunya-dashboard.html">My bookings</a><a class="button button-small button-outline" data-theme-toggle href="#">Dark mode</a><a class="button button-small button-outline logout-button" href="login.html">Log out</a></nav></header>
+  <main class="dashboard-main"><section class="dashboard-welcome"><div><span class="eyebrow">YOUR CAMPUS SCHEDULE</span><h1>My <span class="text-accent">bookings.</span></h1><p>Check in, manage, and keep track of your campus spaces.</p><p class="karunya-profile" data-profile></p></div><a class="button button-primary" href="campus-booking.html">＋ New booking</a></section>
+    <section class="dashboard-card"><div class="card-heading"><div><span class="eyebrow">UP NEXT</span><h2>Upcoming and active</h2></div></div><div class="karunya-booking-list" data-upcoming><div class="loading-card"><span class="spinner"></span>Loading bookings…</div></div></section>
+    <section class="dashboard-card karunya-history"><div class="card-heading"><div><span class="eyebrow">PAST RESERVATIONS</span><h2>Booking history</h2></div></div><div class="karunya-booking-list" data-history><div class="loading-card"><span class="spinner"></span>Loading history…</div></div></section>
+    <section class="dashboard-card karunya-history"><div class="card-heading"><div><span class="eyebrow">CAMPUS UPDATES</span><h2>Notifications</h2></div></div><div class="karunya-notifications" data-notifications></div></section>
+    <p class="form-message" data-error role="status" aria-live="polite"></p>
+    <dialog class="resource-dialog" data-qr-dialog><div class="card-heading"><div><span class="eyebrow">BOOKING CHECK-IN</span><h2>Your QR code</h2></div><button class="icon-button" data-qr-close type="button" aria-label="Close dialog">×</button></div><img class="booking-qr" data-qr-image alt="Booking check-in QR code"><p>Show this code at the facility or use the check-in button when you arrive.</p></dialog>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">K</span><span>Karunya Campus Booking</span></a><p>Your campus, within reach.</p><div class="footer-contact"><a href="mailto:campus-support@example.edu">Campus support ↗</a><span>Karunya University</span></div></footer>
+</body>
+</html>

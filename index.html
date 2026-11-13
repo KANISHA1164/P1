@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book library seats, seminar halls, and computer labs at Karunya University.">
+  <title>Karunya Campus Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo.js" defer></script>
+  <script src="karunya.js" defer></script>
+</head>
+<body data-karunya-page="home">
+  <header class="site-header karunya-header">
+    <a class="brand" href="index.html"><span class="brand-mark">K</span><span>Karunya <span class="brand-dot">Campus</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="campus-booking.html">Book a space</a>
+      <a class="button button-small button-outline" data-theme-toggle href="#">Dark mode</a>
+      <a class="button button-small button-dark" data-user-link href="login.html">Log in ↗</a>
+    </nav>
+  </header>
+  <main class="karunya-main">
+    <section class="karunya-hero">
+      <div>
+        <span class="eyebrow"><span class="eyebrow-dot"></span> KARUNYA UNIVERSITY · CAMPUS SPACES</span>
+        <h1>Your next space,<br><span class="text-accent">ready when you are.</span></h1>
+        <p>Choose a library seat, a computer, or a seminar hall. See availability and reserve the time you need.</p>
+        <div class="karunya-hero-actions">
+          <a class="button button-primary" href="campus-booking.html">Find a space <span>→</span></a>
+          <a class="text-link" data-home-login href="login.html">University login <span>↗</span></a>
+        </div>
+        <p class="karunya-profile" data-profile hidden></p>
+        <p class="demo-mode-note">Local demo mode · Your sample bookings stay in this browser.</p>
+      </div>
+      <div class="karunya-hero-art" aria-hidden="true"><div class="hero-photo"></div><div class="karunya-orbit">BOOK<br><strong>YOUR<br>SPACE</strong></div><div class="karunya-hero-note"><span class="availability-dot"></span> Ready to explore</div></div>
+    </section>
+    <section class="section karunya-spaces">
+      <div class="section-heading"><div><span class="eyebrow">CHOOSE YOUR SPACE</span><h2>Made for how you work.</h2></div></div>
+      <div class="karunya-category-grid">
+        <a class="karunya-category-card" href="campus-booking.html?category=LIBRARY"><span class="category-icon">⌕</span><span class="eyebrow">QUIET STUDY</span><h3>Library</h3><p>Explore 3 floors of library seats and choose a spot for your study session.</p><span class="text-link">Explore seats →</span></a>
+        <a class="karunya-category-card" href="campus-booking.html?category=SEMINAR_HALL"><span class="category-icon">▤</span><span class="eyebrow">FACULTY BOOKINGS</span><h3>Seminar Halls</h3><p>Compare 7 halls, their capacity, and equipment before reserving.</p><span class="text-link">Explore halls →</span></a>
+        <a class="karunya-category-card" href="campus-booking.html?category=COMPUTER_LAB"><span class="category-icon">⌘</span><span class="eyebrow">COMPUTING</span><h3>Computer Labs</h3><p>Choose a system in one of 17 labs or reserve a whole lab as faculty.</p><span class="text-link">Explore labs →</span></a>
+      </div>
+    </section>
+    <section class="karunya-upcoming">
+      <div class="section-heading"><div><span class="eyebrow">YOUR CAMPUS SCHEDULE</span><h2>My upcoming bookings</h2></div><a class="text-link" href="karunya-dashboard.html">See all bookings →</a></div>
+      <div class="karunya-booking-list" data-upcoming><div class="loading-card"><span class="spinner"></span>Loading upcoming bookings…</div></div>
+      <div class="karunya-notifications" data-notifications></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">K</span><span>Karunya Campus Booking</span></a><p>Find your place to learn.</p><div class="footer-contact"><a href="mailto:campus-support@example.edu">Campus support ↗</a><span>Karunya University · local demo</span></div></footer>
+</body>
+</html>
